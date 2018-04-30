@@ -81,7 +81,7 @@ export default class Page2 extends React.Component {
           buttonStyling={{
             borderWidth: 0,
             backgroundColor: "white",
-            opacity: .7
+            opacity: .9
           }}
           arrowStyling={{
             color: "darkcyan"
