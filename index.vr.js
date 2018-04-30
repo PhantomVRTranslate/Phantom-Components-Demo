@@ -9,13 +9,13 @@ import {
   View
 } from "react-vr";
 
-import App from "./app";
+import App from "./dist/app";
 
 import {
   Title
 } from 'phantom_components';
 
-import backgroundImage from './helperFiles/styleSheet';
+import { backgroundImage } from './helperFiles/styleSheet';
 
 export default class WelcomeToVR extends React.Component {
   constructor() {
@@ -35,7 +35,7 @@ export default class WelcomeToVR extends React.Component {
   render() {
     return (
       <View>
-        {/* <Pano source={{uri: backgroundImage}}/> */}
+        <Pano source={{uri: backgroundImage}}/>
         <Title
           title='Baja Mexico'
           activateScene={this.activateScene}

@@ -13,7 +13,7 @@ import {
   Navbar
 } from 'phantom_components';
 
-import { navbarContent } from './helperFiles/content';
+import { navbarContent } from '../helperFiles/content';
 
 export default class App extends React.Component {
 

@@ -2,14 +2,16 @@ import React from "react";
 import { View, Animated, asset, Image, Text } from "react-vr";
 import { Easing } from "react-native";
 
+
 import {
   Gallery,
   GalleryItem,
-  Carousel,
-  TextCard
+  ImageCaption,
+  ImageCard,
+  TextCard,
 } from 'phantom_components';
 
-export default class Page2 extends React.Component {
+export default class Page1 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -65,48 +67,50 @@ export default class Page2 extends React.Component {
           transform: [{ translateX: this.state.slideLeft }]
         }}
       >
-        <Carousel
-          flex={2}
-          imageCollection={[
-            "https://s3.amazonaws.com/project-phantom/graywhalefluke.jpg",
-            "https://s3.amazonaws.com/project-phantom/DSC_0098.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0132.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0303.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0450.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0336.JPG"
-          ]}
-          initialCard={0}
-          type="image"
-          maxTextLength={120}
-          cardStyling={{
-            borderWidth: 2,
-            borderColor: "white"
-          }}
-          buttonStyling={{
-            borderWidth: 1,
-            borderColor: "white"
-          }}
-          arrowStyling={{
-            color: "darkcyan"
-          }}
-        >test</Carousel>
-        <Gallery>
+        <Gallery
+        galleryItemStyling={{
+          borderWidth: 0
+        }}>
           <GalleryItem
             type="image"
-            src="https://s3.amazonaws.com/project-phantom/DSC_0471.JPG"
+            src="https://s3.amazonaws.com/project-phantom/DSC_0313.JPG"
           />
           <GalleryItem
             type="image"
-            src="https://s3.amazonaws.com/project-phantom/DSC_0280.JPG"
+            src="https://s3.amazonaws.com/project-phantom/cliffs.JPG"
           />
         </Gallery>
-
-        <TextCard flex={2}>
-          Every winter, hundreds of Pacific gray whales return to their
-          traditional breeding and birthing grounds in sheltered San Ignacio
-          Lagoon on Mexico’s Baja Peninsula. Friendly and engaging, they are
-          often intrigued with humans, swimming right up to our open boats.
+        <TextCard
+          flex={3}
+          cardStyling={{
+            padding: 20
+          }}
+        >
+          Baja, the earth’s second-longest peninsula, offers over 1200km of the
+          mystical, ethereal, majestic and untamed. Those lucky enough to make
+          the full Tijuana to Los Cabos trip will find that the Carretera
+          Transpeninsular (Hwy 1) offers stunning vistas at every turn. The
+          middle of nowhere is more beautiful than you ever imagined, and people
+          are friendly, relaxed and helpful – even in the border towns. Side
+          roads pass through tiny villages and wind drunkenly along the sides of
+          mountains. Condors carve circles into an unblemished blue sky. Some
+          people simply sip drinks, eat fish tacos and watch the sun disappear
+          into the Pacific. Some choose to feel the rush of adrenaline as they
+          surf that perfect wave.
         </TextCard>
+        <Gallery
+        galleryItemStyling={{
+          borderWidth: 0
+        }}>
+          <GalleryItem
+            type="image"
+            src="https://s3.amazonaws.com/project-phantom/DSC_0450.JPG"
+          />
+          <GalleryItem
+            type="image"
+            src="https://s3.amazonaws.com/project-phantom/DSC_0090.JPG"
+          />
+        </Gallery>
       </Animated.View>
     );
   }
