@@ -21,35 +21,21 @@ export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      page: <Page1/>
+      page: 'page1'
     };
 
     this.changePage = this.changePage.bind(this);
   }
 
   changePage(pageId) {
-    let page;
-
-    switch(pageId) {
-      case 'page1':
-        page = <Page1/>;
-        break;
-      case 'page2':
-        page = <Page2/>;
-        break;
-      case 'page3':
-        page = <Page3/>;
-        break;
-    }
-
-    this.setState({page});
+    this.setState({page: pageId});
   }
 
   render() {
     return (
       <View>
       <ContentPlane>
-        {this.state.page}
+        {this.state.page === 'page1' ? <Page1 /> : 'page2' ? <Page2 /> : <Page3 />}
        </ContentPlane>
 
         <Navbar
