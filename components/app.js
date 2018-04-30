@@ -1,9 +1,9 @@
 import React from "react";
-import { 
-    AppRegistry, 
-    asset, 
-    Pano, 
-    Text, 
+import {
+    AppRegistry,
+    asset,
+    Pano,
+    Text,
     View,
     CylindricalPanel,
 } from "react-vr";
@@ -48,18 +48,18 @@ export default class App extends React.Component {
   }
 
   render() {
-    
+
     return (
       <View>
       <ContentPlane>
         {this.state.page}
        </ContentPlane>
 
-        <NavBar 
+        <NavBar
           content={navbarContent}
           changePage={this.changePage.bind(this)}
           page={this.state.page}
-          progressColor="#777"
+          progressColor="darkcyan"
           />
       </View>
     );

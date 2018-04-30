@@ -59,7 +59,7 @@ export default class Page1 extends React.Component {
   }
 
   render() {
-    
+
     return (
       <Animated.View
         style={{
@@ -90,9 +90,9 @@ export default class Page1 extends React.Component {
           padding: 25,
           backgroundColor: 'orange'
         }}>ojpwef</TextCard> */}
-        <Gallery 
+        {/*<Gallery
         galleryStyling={{
-          backgroundColor: 'green'
+          backgroundColor: 'lightgray'
         }}
         galleryItemStyling={{
           borderWidth: 2
@@ -101,17 +101,17 @@ export default class Page1 extends React.Component {
           <GalleryItem
           type="image"
             src={
-              "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
+              "https://s3.amazonaws.com/project-phantom/DSC_0313.JPG"
             }
           />
           <GalleryItem
            type="text"
-            text="Hello smelly"
+            text="Visit Baja Mexico!"
           />
           <GalleryItem
            type="image"
             src={
-              "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
+              "https://s3.amazonaws.com/project-phantom/DSC_0364.JPG"
             }
           />
           <GalleryItem
@@ -130,7 +130,7 @@ export default class Page1 extends React.Component {
               "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
             }
           />
-        </Gallery>
+        </Gallery>*/}
         {/* <ImageCard flex={1} src={'https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg'}/> */}
         {/* <CardSorter
           options={{
@@ -140,28 +140,39 @@ export default class Page1 extends React.Component {
         />
         {/* <VideoCard src={'../static_assets/videos/fireplace.mp4'}/> */}
         {/* <TextCard>Hello! It's a good day to be eating Christmsas</TextCard> */}
-        <ImageCaption 
-          flex={1} 
-          src={'https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg'} 
+        {/* <ImageCaption
+          flex={1}
+          src={'../static_assets/pictures/pup.jpg'}
           caption="A puppy."
           alwaysShow={false}
-          captionStyling={{
-            color: 'orange'
-          }}
-           /> 
-
+           /> */}
+         <Gallery>
+           <GalleryItem
+           type="image"
+             src="https://s3.amazonaws.com/project-phantom/DSC_0313.JPG"
+           />
+           <GalleryItem
+           type="image"
+             src="https://s3.amazonaws.com/project-phantom/cliffs.JPG"
+           />
+         </Gallery>
+        <TextCard  flex={3} cardStyling={{
+          padding: 20
+        }}>
+          Baja, the earth’s second-longest peninsula, offers over 1200km of the mystical, ethereal, majestic and untamed. Those lucky enough to make the full Tijuana to Los Cabos trip will find that the Carretera Transpeninsular (Hwy 1) offers stunning vistas at every turn. The middle of nowhere is more beautiful than you ever imagined, and people are friendly, relaxed and helpful – even in the border towns. Side roads pass through tiny villages and wind drunkenly along the sides of mountains. Condors carve circles into an unblemished blue sky. Some people simply sip drinks, eat fish tacos and watch the sun disappear into the Pacific. Some choose to feel the rush of adrenaline as they surf that perfect wave.
+        </TextCard>
         <Gallery>
           <GalleryItem
           type="image"
-            src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
+            src="https://s3.amazonaws.com/project-phantom/DSC_0450.JPG"
           />
           <GalleryItem
           type="image"
-            src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
+            src="https://s3.amazonaws.com/project-phantom/DSC_0090.JPG"
           />
         </Gallery>
 
-        <TextCard>ojpwef</TextCard>
+
       </Animated.View>
     );
   }
