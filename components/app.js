@@ -60,6 +60,13 @@ export default class App extends React.Component {
           changePage={this.changePage.bind(this)}
           page={this.state.page}
           progressColor="darkcyan"
+          navbarStyle = {{
+            borderColor: '#a8fff1',
+            padding: .01,
+            margin: .01,
+          }}
+          linkBgColor='#0d5045'
+          linkSelectedColor='#1e8675'
           />
       </View>
     );

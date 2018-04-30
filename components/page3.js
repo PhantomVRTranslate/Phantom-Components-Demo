@@ -19,7 +19,7 @@ export default class Page3 extends React.Component {
     super(props);
     this.state = {
       slideLeft: new Animated.Value(-1024),
-      fadeIn: new Animated.Value(0),
+      fadeIn: new Animated.Value(0)
     };
   }
 
@@ -59,7 +59,6 @@ export default class Page3 extends React.Component {
   }
 
   render() {
-
     return (
       <Animated.View
         style={{
@@ -74,75 +73,21 @@ export default class Page3 extends React.Component {
         <Carousel
           flex={2}
           imageCollection={[
-            'https://s3.amazonaws.com/project-phantom/DSC_0364.JPG',
-            'https://s3.amazonaws.com/project-phantom/DSC_0132.JPG'
+            "https://s3.amazonaws.com/project-phantom/DSC_0364.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0132.JPG"
           ]}
           initialCard={0}
           type="image"
           maxTextLength={120}
-        >
-        opjwefopjwefopjwefopjwefopjwefopjwefopjwefopjweopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjweffopjwefopjwefopjwefopjwefopjwefopjwefopjwef
-        </Carousel>
-        {/* <TextCard flex={2}>ojpwef</TextCard> */}
-        {/* <Gallery flex={2}>
-          <GalleryItem
-          type="image"
-            src={
-              "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-            }
-          />
-          <GalleryItem
-           type="text"
-            text="Hello smelly"
-          />
-          <GalleryItem
-           type="image"
-            src={
-              "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-            }
-          />
-          <GalleryItem
-           type="image"
-            src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-          />
-          <GalleryItem
-           type="image"
-            src={
-              "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-            }
-          />
-          <GalleryItem
-           type="image"
-            src={
-              "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-            }
-          />
-        </Gallery> */}
-        {/* <ImageCard flex={1} src={'https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg'}/> */}
+        >test</Carousel>
 
-        {/* <TextCard>Hello! It's a good day to be eating Christmsas</TextCard> */}
-        {/* <ImageCaption
-          flex={1}
-          src={'../static_assets/pictures/pup.jpg'}
-          caption="A puppy."
-          alwaysShow={false}
-           /> */}
+        <VideoCard src="../Baja500.mp4" />
 
-        {/*<Gallery>
-          <GalleryItem
-          type="image"
-            src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-          />
-          <GalleryItem
-          type="image"
-            src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-          />
-        </Gallery>*/}
-
-        <VideoCard src='../Baja500.mp4'></VideoCard>
-
-
-        <TextCard>Every year the Baja peninsula hosts the Baja 500, an adrenaline filled off-road truck race where hundreds of overpowered trucks scramble down desert roads to the finish line.</TextCard>
+        <TextCard>
+          Every year the Baja peninsula hosts the Baja 500, an adrenaline filled
+          off-road truck race where hundreds of overpowered trucks scramble down
+          desert roads to the finish line.
+        </TextCard>
       </Animated.View>
     );
   }

@@ -19,7 +19,7 @@ export default class Page2 extends React.Component {
     super(props);
     this.state = {
       slideLeft: new Animated.Value(-1024),
-      fadeIn: new Animated.Value(0),
+      fadeIn: new Animated.Value(0)
     };
   }
 
@@ -59,7 +59,6 @@ export default class Page2 extends React.Component {
   }
 
   render() {
-
     return (
       <Animated.View
         style={{
@@ -74,93 +73,45 @@ export default class Page2 extends React.Component {
         <Carousel
           flex={2}
           imageCollection={[
-            'https://s3.amazonaws.com/project-phantom/graywhalefluke.jpg',
-            'https://s3.amazonaws.com/project-phantom/DSC_0098.JPG',
-            'https://s3.amazonaws.com/project-phantom/DSC_0132.JPG',
-            'https://s3.amazonaws.com/project-phantom/DSC_0303.JPG',
-            'https://s3.amazonaws.com/project-phantom/DSC_0450.JPG',
-            'https://s3.amazonaws.com/project-phantom/DSC_0336.JPG'
+            "https://s3.amazonaws.com/project-phantom/graywhalefluke.jpg",
+            "https://s3.amazonaws.com/project-phantom/DSC_0098.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0132.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0303.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0450.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0336.JPG"
           ]}
           initialCard={0}
           type="image"
           maxTextLength={120}
           cardStyling={{
             borderWidth: 2,
-            borderColor: 'white'
+            borderColor: "white"
           }}
           buttonStyling={{
             borderWidth: 1,
-            borderColor: 'white'
+            borderColor: "white"
           }}
           arrowStyling={{
-            color: 'darkcyan',
+            color: "darkcyan"
           }}
-        >
-        opjwefopjwefopjwefopjwefopjwefopjwefopjwefopjweopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjweffopjwefopjwefopjwefopjwefopjwefopjwefopjwef
-        </Carousel>
-        {/* <TextCard flex={2}>ojpwef</TextCard> */}
-        {/* <Gallery flex={2}>
-          <GalleryItem
-          type="image"
-            src={
-              "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-            }
-          />
-          <GalleryItem
-           type="text"
-            text="Hello smelly"
-          />
-          <GalleryItem
-           type="image"
-            src={
-              "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-            }
-          />
-          <GalleryItem
-           type="image"
-            src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-          />
-          <GalleryItem
-           type="image"
-            src={
-              "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-            }
-          />
-          <GalleryItem
-           type="image"
-            src={
-              "https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
-            }
-          />
-        </Gallery> */}
-        {/* <ImageCard flex={1} src={'https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg'}/> */}
-        {/* <CardSorter
-          options={{
-            type: "video",
-            src: "../static_assets/videos/fireplace.mp4"
-          }}
-        />
-        {/* <VideoCard src={'../static_assets/videos/fireplace.mp4'}/> */}
-        {/* <TextCard>Hello! It's a good day to be eating Christmsas</TextCard> */}
-        {/* <ImageCaption
-          flex={1}
-          src={'../static_assets/pictures/pup.jpg'}
-          caption="A puppy."
-          alwaysShow={false}
-           /> */}
-
+        >test</Carousel>
         <Gallery>
           <GalleryItem
-          type="image"
+            type="image"
             src="https://s3.amazonaws.com/project-phantom/DSC_0471.JPG"
           />
           <GalleryItem
-          type="image"
+            type="image"
             src="https://s3.amazonaws.com/project-phantom/DSC_0280.JPG"
           />
         </Gallery>
 
-        <TextCard flex={2}>Every winter, hundreds of Pacific gray whales return to their traditional breeding and birthing grounds in sheltered San Ignacio Lagoon on Mexico’s Baja Peninsula. Friendly and engaging, they are often intrigued with humans, swimming right up to our open boats.</TextCard>
+        <TextCard flex={2}>
+          Every winter, hundreds of Pacific gray whales return to their
+          traditional breeding and birthing grounds in sheltered San Ignacio
+          Lagoon on Mexico’s Baja Peninsula. Friendly and engaging, they are
+          often intrigued with humans, swimming right up to our open boats.
+        </TextCard>
       </Animated.View>
     );
   }

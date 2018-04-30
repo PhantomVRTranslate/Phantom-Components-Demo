@@ -33,20 +33,19 @@ export default class WelcomeToVR extends React.Component {
   render() {
     return (
       <View>
-        {/* <Pano source={{uri: 'https://c1.staticflickr.com/1/819/26673769157_b83ac4a9f6_o.jpg'}}/> // forest */}
-        <Pano source={{uri: 'https://c1.staticflickr.com/1/818/27568453618_37132d75e8_o.jpg'}}/>
-        {/* <Pano source={{uri: 'https://c1.staticflickr.com/1/577/20214930404_d30c781c47_o.jpg'}}/> // fractal */}
-        {/* <Pano source={{uri: 'https://c2.staticflickr.com/8/7720/17491232401_4fee3698ff_o.jpg'}}/> // snow */}
-        {/* <Pano source={{uri: 'https://c1.staticflickr.com/1/192/500978642_93d4446af7_o.jpg'}}/> // inari */}
+        {/* <Pano source={{uri: 'https://c1.staticflickr.com/1/818/27568453618_37132d75e8_o.jpg'}}/> */}
         <Title
           title='Baja Mexico'
           activateScene={this.activateScene}
           titleStyling={{
-            color: 'seagreen'
+            color: '#155e3d',
+            fontSize: .8,
           }}
+          progressWidth={1}
+          progressColor="#a8fff1"
           startText='Welcomes You!'
           startTextStyling={{
-            color: 'darkcyan'
+            color: '#8ef5e4'
           }} />
         { this.state.enterScene ? <App /> : <View /> }
       </View>
