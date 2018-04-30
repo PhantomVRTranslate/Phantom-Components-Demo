@@ -31,10 +31,25 @@ export default class App extends React.Component {
   }
 
   render() {
+    let currPage ;
+    switch(this.state.page) {
+      case 'page1':
+        currPage = <Page1 />;
+        break;
+      case 'page2':
+        currPage = <Page2 />;
+        break;
+      case 'page3':
+        currPage = <Page3 />;
+        break;
+      default:
+        break;
+    }
+
     return (
       <View>
       <ContentPlane>
-        {this.state.page === 'page1' ? <Page1 /> : 'page2' ? <Page2 /> : <Page3 />}
+        {currPage}
        </ContentPlane>
 
         <Navbar
