@@ -38,7 +38,6 @@ export default class Page1 extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps);
     Animated.sequence([
       Animated.parallel([
         Animated.timing(this.state.slideLeft, {
