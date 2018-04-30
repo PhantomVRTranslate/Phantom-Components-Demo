@@ -7,8 +7,7 @@
   <body>
   
     <!-- When you're ready to deploy your app, update this line to point to your compiled client.bundle.js -->
-    <script src="./build/client.bundle.js"></script>
-    <!-- ?platform=vr -->
+    <script src="./build/client.bundle.js?platform=vr&dev=true"></script>
     <script>
       let mobile = false;
       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -16,8 +15,7 @@
       }
       
       ReactVR.init(
-        './build/index.bundle.js',
-        // ?platform=vr&dev=true
+        "./build/index.bundle.js?platform=vr&dev=true",
         document.body,
         {mobile}
       );

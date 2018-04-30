@@ -2,7 +2,6 @@ import React from "react";
 import { View, Animated, asset, Image, Text } from "react-vr";
 import { Easing } from "react-native";
 
-
 import {
   Gallery,
   GalleryItem,
