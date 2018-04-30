@@ -59,7 +59,7 @@ export default class Page2 extends React.Component {
   }
 
   render() {
-    
+
     return (
       <Animated.View
         style={{
@@ -72,13 +72,14 @@ export default class Page2 extends React.Component {
         }}
       >
         <Carousel
-          flex={1}
+          flex={2}
           imageCollection={[
-            'https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg',
-            'https://s7d1.scene7.com/is/image/PETCO/puppy-090517-dog-featured-355w-200h-d',
-            'https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg',
-            'https://s7d1.scene7.com/is/image/PETCO/puppy-090517-dog-featured-355w-200h-d',
-            'https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg'
+            'https://s3.amazonaws.com/project-phantom/graywhalefluke.jpg',
+            'https://s3.amazonaws.com/project-phantom/DSC_0098.JPG',
+            'https://s3.amazonaws.com/project-phantom/DSC_0132.JPG',
+            'https://s3.amazonaws.com/project-phantom/DSC_0303.JPG',
+            'https://s3.amazonaws.com/project-phantom/DSC_0450.JPG',
+            'https://s3.amazonaws.com/project-phantom/DSC_0336.JPG'
           ]}
           initialCard={0}
           type="image"
@@ -92,7 +93,7 @@ export default class Page2 extends React.Component {
             borderColor: 'white'
           }}
           arrowStyling={{
-            color: '#f00',
+            color: 'darkcyan',
           }}
         >
         opjwefopjwefopjwefopjwefopjwefopjwefopjwefopjweopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjwefopjweffopjwefopjwefopjwefopjwefopjwefopjwefopjwef
@@ -141,9 +142,9 @@ export default class Page2 extends React.Component {
         />
         {/* <VideoCard src={'../static_assets/videos/fireplace.mp4'}/> */}
         {/* <TextCard>Hello! It's a good day to be eating Christmsas</TextCard> */}
-        {/* <ImageCaption 
-          flex={1} 
-          src={'../static_assets/pictures/pup.jpg'} 
+        {/* <ImageCaption
+          flex={1}
+          src={'../static_assets/pictures/pup.jpg'}
           caption="A puppy."
           alwaysShow={false}
            /> */}
@@ -151,15 +152,15 @@ export default class Page2 extends React.Component {
         <Gallery>
           <GalleryItem
           type="image"
-            src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
+            src="https://s3.amazonaws.com/project-phantom/DSC_0471.JPG"
           />
           <GalleryItem
           type="image"
-            src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
+            src="https://s3.amazonaws.com/project-phantom/DSC_0280.JPG"
           />
         </Gallery>
 
-        <TextCard>ojpwef</TextCard>
+        <TextCard flex={2}>Every winter, hundreds of Pacific gray whales return to their traditional breeding and birthing grounds in sheltered San Ignacio Lagoon on Mexico’s Baja Peninsula. Friendly and engaging, they are often intrigued with humans, swimming right up to our open boats.</TextCard>
       </Animated.View>
     );
   }

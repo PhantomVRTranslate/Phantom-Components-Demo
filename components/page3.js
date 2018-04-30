@@ -59,7 +59,7 @@ export default class Page3 extends React.Component {
   }
 
   render() {
-    
+
     return (
       <Animated.View
         style={{
@@ -72,13 +72,10 @@ export default class Page3 extends React.Component {
         }}
       >
         <Carousel
-          flex={1}
+          flex={2}
           imageCollection={[
-            'https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg',
-            'https://s7d1.scene7.com/is/image/PETCO/puppy-090517-dog-featured-355w-200h-d',
-            'https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg',
-            'https://s7d1.scene7.com/is/image/PETCO/puppy-090517-dog-featured-355w-200h-d',
-            'https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg'
+            'https://s3.amazonaws.com/project-phantom/DSC_0364.JPG',
+            'https://s3.amazonaws.com/project-phantom/DSC_0132.JPG'
           ]}
           initialCard={0}
           type="image"
@@ -122,22 +119,16 @@ export default class Page3 extends React.Component {
           />
         </Gallery> */}
         {/* <ImageCard flex={1} src={'https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg'}/> */}
-        {/* <CardSorter
-          options={{
-            type: "video",
-            src: "../static_assets/videos/fireplace.mp4"
-          }}
-        />
-        {/* <VideoCard src={'../static_assets/videos/fireplace.mp4'}/> */}
+
         {/* <TextCard>Hello! It's a good day to be eating Christmsas</TextCard> */}
-        {/* <ImageCaption 
-          flex={1} 
-          src={'../static_assets/pictures/pup.jpg'} 
+        {/* <ImageCaption
+          flex={1}
+          src={'../static_assets/pictures/pup.jpg'}
           caption="A puppy."
           alwaysShow={false}
            /> */}
 
-        <Gallery>
+        {/*<Gallery>
           <GalleryItem
           type="image"
             src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
@@ -146,9 +137,12 @@ export default class Page3 extends React.Component {
           type="image"
             src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg"
           />
-        </Gallery>
+        </Gallery>*/}
 
-        <TextCard>ojpwef</TextCard>
+        <VideoCard src='../Baja500.mp4'></VideoCard>
+
+
+        <TextCard>Every year the Baja peninsula hosts the Baja 500, an adrenaline filled off-road truck race where hundreds of overpowered trucks scramble down desert roads to the finish line.</TextCard>
       </Animated.View>
     );
   }

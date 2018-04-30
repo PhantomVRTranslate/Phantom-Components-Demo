@@ -82,7 +82,7 @@ export default class Title extends React.Component {
 
     const defaultTitleStyling = {
       fontSize: 0.6,
-      transform: [{ translate: [0, .2, 0] }]
+      transform: [{ translate: [0, .3, 0] }]
     };
 
     const mergedTitleStyling = Object.assign({}, defaultTitleStyling, titleStyling);
@@ -117,8 +117,8 @@ export default class Title extends React.Component {
           {title || 'Sample Site'}
         </Text>
 
-        { !enteredScene && buttonLoaded ? 
-        <GazeButton 
+        { !enteredScene && buttonLoaded ?
+        <GazeButton
           onTrigger={this.handleTrigger.bind(this)}
           >
           <Animated.View

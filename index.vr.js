@@ -18,7 +18,7 @@ import Navbar from "./components/navbar/Navbar.js";
 export default class WelcomeToVR extends React.Component {
   constructor() {
     super();
-    
+
     this.state = {
       enterScene: false,
     };
@@ -39,14 +39,14 @@ export default class WelcomeToVR extends React.Component {
         {/* <Pano source={{uri: 'https://c2.staticflickr.com/8/7720/17491232401_4fee3698ff_o.jpg'}}/> // snow */}
         {/* <Pano source={{uri: 'https://c1.staticflickr.com/1/192/500978642_93d4446af7_o.jpg'}}/> // inari */}
         <Title
-          title='PhantomVR' 
+          title='Baja Mexico'
           activateScene={this.activateScene}
           titleStyling={{
-            color: 'orange'
+            color: 'seagreen'
           }}
-          startText='Welcome'
+          startText='Welcomes You!'
           startTextStyling={{
-            color: 'blue'
+            color: 'darkcyan'
           }} />
         { this.state.enterScene ? <App /> : <View /> }
       </View>
