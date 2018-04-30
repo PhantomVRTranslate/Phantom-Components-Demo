@@ -10,8 +10,9 @@ import Page3 from './page3';
 
 import {
   ContentPlane,
-  Navbar
 } from 'phantom_components';
+
+import Navbar from './Navbar';
 
 import { navbarContent } from '../helperFiles/content';
 
