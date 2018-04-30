@@ -84,7 +84,7 @@ export default class Page3 extends React.Component {
           }}
         >test</Carousel>
 
-        <VideoCard src="../Baja500.mp4" />
+        <VideoCard src="https://s3.us-east-2.amazonaws.com/phantom-vr-images/Baja500.mp4" />
 
         <TextCard>
           Every year the Baja peninsula hosts the Baja 500, an adrenaline filled
