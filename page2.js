@@ -2,19 +2,14 @@ import React from "react";
 import { View, Animated, asset, Image, Text } from "react-vr";
 import { Easing } from "react-native";
 
-import CardContainer from "./cards/CardContainer";
-import CardSorter from "./cards/CardSorter";
-import Gallery from "./gallery/Gallery";
-import GazeButton from "./button/GazeButton";
-import ImageCaption from "./cards/ImageCaption";
-import ImageCard from "./cards/ImageCard";
-import TextCard from "./cards/TextCard";
-import VideoCard from "./cards/VideoCard";
-import Carousel from "./carousel/Carousel.js";
+import {
+  Gallery,
+  GalleryItem,
+  Carousel,
+  TextCard
+} from 'phantom_components';
 
-import GalleryItem from "./gallery/GalleryItem";
-
-export default class Page3 extends React.Component {
+export default class Page2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -73,20 +68,44 @@ export default class Page3 extends React.Component {
         <Carousel
           flex={2}
           imageCollection={[
-            "https://s3.amazonaws.com/project-phantom/DSC_0364.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0132.JPG"
+            "https://s3.amazonaws.com/project-phantom/graywhalefluke.jpg",
+            "https://s3.amazonaws.com/project-phantom/DSC_0098.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0132.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0303.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0450.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0336.JPG"
           ]}
           initialCard={0}
           type="image"
           maxTextLength={120}
+          cardStyling={{
+            borderWidth: 2,
+            borderColor: "white"
+          }}
+          buttonStyling={{
+            borderWidth: 1,
+            borderColor: "white"
+          }}
+          arrowStyling={{
+            color: "darkcyan"
+          }}
         >test</Carousel>
+        <Gallery>
+          <GalleryItem
+            type="image"
+            src="https://s3.amazonaws.com/project-phantom/DSC_0471.JPG"
+          />
+          <GalleryItem
+            type="image"
+            src="https://s3.amazonaws.com/project-phantom/DSC_0280.JPG"
+          />
+        </Gallery>
 
-        <VideoCard src="../Baja500.mp4" />
-
-        <TextCard>
-          Every year the Baja peninsula hosts the Baja 500, an adrenaline filled
-          off-road truck race where hundreds of overpowered trucks scramble down
-          desert roads to the finish line.
+        <TextCard flex={2}>
+          Every winter, hundreds of Pacific gray whales return to their
+          traditional breeding and birthing grounds in sheltered San Ignacio
+          Lagoon on Mexico’s Baja Peninsula. Friendly and engaging, they are
+          often intrigued with humans, swimming right up to our open boats.
         </TextCard>
       </Animated.View>
     );

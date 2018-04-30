@@ -2,17 +2,14 @@ import React from "react";
 import { View, Animated, asset, Image, Text } from "react-vr";
 import { Easing } from "react-native";
 
-import CardContainer from "./cards/CardContainer";
 
-import Gallery from "./gallery/Gallery";
-import GazeButton from "./button/GazeButton";
-import ImageCaption from "./cards/ImageCaption";
-import ImageCard from "./cards/ImageCard";
-import TextCard from "phantom_components";
-import VideoCard from "./cards/VideoCard";
-import Carousel from "./carousel/Carousel.js";
-
-import GalleryItem from "./gallery/GalleryItem";
+import {
+  Gallery,
+  GalleryItem,
+  ImageCaption,
+  ImageCard,
+  TextCard,
+} from 'phantom_components';
 
 export default class Page1 extends React.Component {
   constructor(props) {

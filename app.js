@@ -1,11 +1,6 @@
 import React from "react";
 import {
-    AppRegistry,
-    asset,
-    Pano,
-    Text,
     View,
-    CylindricalPanel,
 } from "react-vr";
 
 // Import your custom pages here
@@ -13,10 +8,12 @@ import Page1 from './page1';
 import Page2 from './page2';
 import Page3 from './page3';
 
-import ContentPlane from './ContentPlane';
-import NavBar from './navbar/Navbar';
+import {
+  ContentPlane,
+  Navbar
+} from 'phantom_components';
 
-import { navbarContent } from '../helperFiles/content';
+import { navbarContent } from './helperFiles/content';
 
 export default class App extends React.Component {
 
@@ -48,14 +45,13 @@ export default class App extends React.Component {
   }
 
   render() {
-
     return (
       <View>
       <ContentPlane>
         {this.state.page}
        </ContentPlane>
 
-        <NavBar
+        <Navbar
           content={navbarContent}
           changePage={this.changePage.bind(this)}
           page={this.state.page}
