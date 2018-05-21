@@ -7,7 +7,7 @@ import {
   GalleryItem,
   Carousel,
   TextCard
-} from 'phantom_components';
+} from '../Phantom_Components/index';
 
 export default class Page2 extends React.Component {
   constructor(props) {
@@ -66,16 +66,16 @@ export default class Page2 extends React.Component {
       >
         <Carousel
           flex={2}
-          imageCollection={[
-            "https://s3.amazonaws.com/project-phantom/graywhalefluke.jpg",
-            "https://s3.amazonaws.com/project-phantom/DSC_0098.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0132.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0303.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0450.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0336.JPG"
-          ]}
+          // imageCollection={[
+          //   "https://s3.amazonaws.com/project-phantom/graywhalefluke.jpg",
+          //   "https://s3.amazonaws.com/project-phantom/DSC_0098.JPG",
+          //   "https://s3.amazonaws.com/project-phantom/DSC_0132.JPG",
+          //   "https://s3.amazonaws.com/project-phantom/DSC_0303.JPG",
+          //   "https://s3.amazonaws.com/project-phantom/DSC_0450.JPG",
+          //   "https://s3.amazonaws.com/project-phantom/DSC_0336.JPG"
+          // ]}
           initialCard={0}
-          type="image"
+          type="text"
           maxTextLength={120}
           buttonStyling={{
             borderWidth: 0,
@@ -84,8 +84,31 @@ export default class Page2 extends React.Component {
           }}
           arrowStyling={{
             color: "darkcyan"
-          }}
-        >test</Carousel>
+          }} >
+        test test test test test test test test test test test test test test test test 
+        test test test test topjwefeaioefnwst test test test test test test teopwjefopjst test test test test 
+        test test teswefweft test test test twefwefest test test test test test test test test test 
+        test test test test test test test test test test test test test twefwefest test tiow;nefest 
+        test teswcioanewfweft test tpowjefest test test test test test test test test test test test test 
+        test test test test test test test test test test test test test test test test 
+        test test test test twefwefest test test test test test test test test test test test 
+        test testpowjefopwjef test test test test test test tpwejfoest test test test test test test test 
+        test test test test teswpeojft test test test test test test test teswefweft test test test 
+        test test test test test test test test test test test test tesaklsdft test test test 
+        test test test n test test test test test twefwefest test test test ;kajsndftest test test test 
+        test test test test test test test test test test test test test test test test 
+        test test twefwefest test test test testwefwef test test test test test test test test test 
+        test test test test test tepowjefst test test test test test test test tesaksldjft test test 
+        test test test test test test test test test test test test qweio'fn test test test 
+        test test test test test test wefweftest test test test test test test test test test 
+        test test test test test test test test test test test teswefweft test test test test 
+        test teswfoeopfjt wjefn oiwefntest test test test test test test test test test test test test test 
+        test test test test test test test test test test test test test test test test 
+        test test test test test test test test test test twefwefest test test test test test 
+        test test test test test test test test test test test test test test test test 
+        test test test twefwefest qfojknetest test test test test test test test test test test test 
+        test test test test test test test test test test test test test test test test
+        </Carousel>
         <Gallery>
           <GalleryItem
             type="image"

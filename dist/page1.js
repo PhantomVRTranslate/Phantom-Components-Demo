@@ -8,7 +8,7 @@ import {
   ImageCaption,
   ImageCard,
   TextCard,
-} from 'phantom_components';
+} from '../Phantom_Components/index';
 
 export default class Page1 extends React.Component {
   constructor(props) {

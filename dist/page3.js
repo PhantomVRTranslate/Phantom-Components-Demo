@@ -7,7 +7,7 @@ import {
   CarouselItem,
   VideoCard,
   TextCard
-} from 'phantom_components';
+} from '../Phantom_Components/index';
 
 export default class Page3 extends React.Component {
   constructor(props) {
