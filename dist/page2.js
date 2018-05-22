@@ -8,6 +8,7 @@ import {
   Carousel,
   TextCard,
   VideoCard,
+  ImageCaption
 } from 'phantom_components';
 
 export default class Page2 extends React.Component {
@@ -74,7 +75,6 @@ export default class Page2 extends React.Component {
             "https://s3.amazonaws.com/project-phantom/DSC_0303.JPG",
             "https://s3.amazonaws.com/project-phantom/DSC_0450.JPG",
             "https://s3.amazonaws.com/project-phantom/DSC_0336.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0471.JPG",
             "https://s3.amazonaws.com/project-phantom/DSC_0280.JPG"
           ]}
           initialCard={0}
@@ -90,12 +90,17 @@ export default class Page2 extends React.Component {
           }}
         >test</Carousel>
 
-        <VideoCard src="https://s3.us-east-2.amazonaws.com/phantom-vr-images/Baja500.mp4" />
+        <ImageCaption
+        flex={2} 
+        caption="Fido loves the beach!"
+        alwaysShow={false}
+        src="https://s3.amazonaws.com/project-phantom/DSC_0471.JPG" />
 
         <TextCard flex={2}>
-          Every year the Baja peninsula hosts the Baja 500, an adrenaline filled
-          off-road truck race where hundreds of overpowered trucks scramble down
-          desert roads to the finish line.
+          Every winter, hundreds of Pacific gray whales return to their
+          traditional breeding and birthing grounds in sheltered San Ignacio
+          Lagoon on Mexico’s Baja Peninsula. Friendly and engaging, they are
+          often intrigued with humans, swimming right up to our open boats.
         </TextCard>
       </Animated.View>
     );
