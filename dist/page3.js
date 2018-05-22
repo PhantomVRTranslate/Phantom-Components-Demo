@@ -3,10 +3,6 @@ import { View, Animated, asset, Image, Text } from "react-vr";
 import { Easing } from "react-native";
 
 import {
-  // Carousel,
-  // CarouselItem,
-  // TextCard,
-  // VideoCard,
   CarouselPage,
 } from 'phantom_components';
 
