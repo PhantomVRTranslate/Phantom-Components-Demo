@@ -6,8 +6,9 @@ import {
   Gallery,
   GalleryItem,
   Carousel,
-  TextCard
-} from '../Phantom_Components/index';
+  TextCard,
+  VideoCard,
+} from 'phantom_components';
 
 export default class Page2 extends React.Component {
   constructor(props) {
@@ -72,7 +73,9 @@ export default class Page2 extends React.Component {
             "https://s3.amazonaws.com/project-phantom/DSC_0132.JPG",
             "https://s3.amazonaws.com/project-phantom/DSC_0303.JPG",
             "https://s3.amazonaws.com/project-phantom/DSC_0450.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0336.JPG"
+            "https://s3.amazonaws.com/project-phantom/DSC_0336.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0471.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0280.JPG"
           ]}
           initialCard={0}
           type="image"
@@ -84,23 +87,15 @@ export default class Page2 extends React.Component {
           }}
           arrowStyling={{
             color: "darkcyan"
-          }} />
-        <Gallery>
-          <GalleryItem
-            type="image"
-            src="https://s3.amazonaws.com/project-phantom/DSC_0471.JPG"
-          />
-          <GalleryItem
-            type="image"
-            src="https://s3.amazonaws.com/project-phantom/DSC_0280.JPG"
-          />
-        </Gallery>
+          }}
+        >test</Carousel>
+
+        <VideoCard src="https://s3.us-east-2.amazonaws.com/phantom-vr-images/Baja500.mp4" />
 
         <TextCard flex={2}>
-          Every winter, hundreds of Pacific gray whales return to their
-          traditional breeding and birthing grounds in sheltered San Ignacio
-          Lagoon on Mexico’s Baja Peninsula. Friendly and engaging, they are
-          often intrigued with humans, swimming right up to our open boats.
+          Every year the Baja peninsula hosts the Baja 500, an adrenaline filled
+          off-road truck race where hundreds of overpowered trucks scramble down
+          desert roads to the finish line.
         </TextCard>
       </Animated.View>
     );

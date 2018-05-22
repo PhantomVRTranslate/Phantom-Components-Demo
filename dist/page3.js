@@ -3,11 +3,12 @@ import { View, Animated, asset, Image, Text } from "react-vr";
 import { Easing } from "react-native";
 
 import {
-  Carousel,
-  CarouselItem,
-  VideoCard,
-  TextCard
-} from '../Phantom_Components/index';
+  // Carousel,
+  // CarouselItem,
+  // TextCard,
+  // VideoCard,
+  CarouselPage,
+} from 'phantom_components';
 
 export default class Page3 extends React.Component {
   constructor(props) {
@@ -54,43 +55,27 @@ export default class Page3 extends React.Component {
 
   render() {
     return (
-      <Animated.View
-        style={{
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "100%",
-          opacity: this.state.fadeIn,
-          transform: [{ translateX: this.state.slideLeft }]
-        }}
-      >
-        <Carousel
-          flex={2}
-          imageCollection={[
-            "https://s3.amazonaws.com/project-phantom/DSC_0364.JPG",
-            "https://s3.amazonaws.com/project-phantom/DSC_0132.JPG"
-          ]}
-          initialCard={0}
-          type="image"
-          maxTextLength={120}
-          buttonStyling={{
-            borderWidth: 0,
-            backgroundColor: "white",
-            opacity: .9
-          }}
-          arrowStyling={{
-            color: "darkcyan"
-          }}
-        >test</Carousel>
-
-        <VideoCard src="https://s3.us-east-2.amazonaws.com/phantom-vr-images/Baja500.mp4" />
-
-        <TextCard>
-          Every year the Baja peninsula hosts the Baja 500, an adrenaline filled
-          off-road truck race where hundreds of overpowered trucks scramble down
-          desert roads to the finish line.
-        </TextCard>
-      </Animated.View>
+      <CarouselPage 
+          // initialImage={2} 
+          width={800}
+          height={600}
+          images={[
+            "https://s3.amazonaws.com/project-phantom/graywhalefluke.jpg",
+            "https://s3.us-east-2.amazonaws.com/phantom-vr-images/22075-mexico-baja-california-cabo-san-lucas-rocks-lghoz.jpg",
+            "https://s3.amazonaws.com/project-phantom/DSC_0098.JPG",
+            "https://s3.us-east-2.amazonaws.com/phantom-vr-images/BMW_R_1200_GS_In_Baja_Mexico-6.jpg",
+            "https://s3.amazonaws.com/project-phantom/DSC_0132.JPG",
+            "https://s3.us-east-2.amazonaws.com/phantom-vr-images/cancunsecrets.jpg",
+            "https://s3.amazonaws.com/project-phantom/DSC_0303.JPG",
+            "https://s3.us-east-2.amazonaws.com/phantom-vr-images/mex-bcs-gallery-005.jpg",
+            "https://s3.amazonaws.com/project-phantom/DSC_0450.JPG",
+            "https://s3.us-east-2.amazonaws.com/phantom-vr-images/exterior.jpg",
+            "https://s3.amazonaws.com/project-phantom/DSC_0336.JPG",
+            "https://s3.amazonaws.com/project-phantom/DSC_0471.JPG",
+            "https://s3.us-east-2.amazonaws.com/phantom-vr-images/mexico-baja-whale-019.jpg",
+            "https://s3.amazonaws.com/project-phantom/DSC_0280.JPG",
+            "https://s3.us-east-2.amazonaws.com/phantom-vr-images/bayresort.jpg"
+          ]}/>
     );
   }
 }

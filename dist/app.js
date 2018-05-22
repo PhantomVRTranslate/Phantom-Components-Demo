@@ -11,7 +11,7 @@ import Page3 from './page3';
 import {
   ContentPlane,
   Navbar
-} from '../Phantom_Components/index';
+} from 'phantom_components';
 
 import { navbarContent } from '../helperFiles/content';
 
